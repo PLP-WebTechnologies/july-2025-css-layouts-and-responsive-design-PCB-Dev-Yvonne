@@ -1,0 +1,250 @@
+/* 
+ * Reset and Base Styles
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* 
+ * Header & Navigation (Using Flexbox)
+ */
+.header {
+  background-color: #2a5231;
+  color: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+  color: #1c7011;
+}
+
+/* 
+ * Hero Section
+ */
+.hero {
+  background: linear-gradient(135deg, #1e7734, #297e3e);
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* 
+ * Features Section with Flexbox Cards
+ */
+.features {
+  padding: 3rem 5%;
+  text-align: center;
+}
+
+.features h2 {
+  margin-bottom: 2rem;
+  color: #1b3128;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 280px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: #123a24;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  color: #555;
+}
+
+/* 
+ * Main Content Layout (Using CSS Grid)
+ */
+.content-layout {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2rem;
+  padding: 3rem 5%;
+}
+
+.content {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.content p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.sidebar {
+  background: #ecf0f1;
+  padding: 1.5rem;
+  border-radius: 8px;
+  align-self: start;
+}
+
+.sidebar h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-bottom: 0.8rem;
+}
+
+.sidebar a {
+  color: #51836c;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+/* 
+ * Footer
+ */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #2f502a;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* 
+ * Responsive Design with Media Queries
+ */
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-list {
+    justify-content: center;
+  }
+
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .features h2, .content h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .features, .content-layout {
+    padding: 2rem 1rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer {
+    padding: 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* 
+ * Optional: Improve accessibility and focus states
+ */
+a:focus {
+  outline: 3px solid #45eeb5;
+  outline-offset: 2px;
+}

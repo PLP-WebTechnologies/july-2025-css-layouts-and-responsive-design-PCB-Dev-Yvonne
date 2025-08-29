@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Layout with Flexbox & Grid</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>My Responsive Site</h1>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Welcome to Our Website</h2>
+      <p>A fully responsive layout using Flexbox and CSS Grid.</p>
+    </section>
+
+    <!-- Features Section (Flexbox) -->
+    <section class="features">
+      <h2>Our Features</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Responsive Design</h3>
+          <p>Looks great on all devices — mobile, tablet, and desktop.</p>
+        </div>
+        <div class="card">
+          <h3>Clean Code</h3>
+          <p>Built with semantic HTML and modern CSS techniques.</p>
+        </div>
+        <div class="card">
+          <h3>Flex & Grid</h3>
+          <p>Powerful layouts using Flexbox and CSS Grid.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content + Sidebar (CSS Grid) -->
+    <section class="content-layout">
+      <article class="content">
+        <h2>About Us</h2>
+        <p>
+          We are a team dedicated to creating beautiful, functional websites
+          using modern web standards. Our focus is on performance, accessibility,
+          and responsive design.
+        </p>
+        <p>
+          This layout uses CSS Grid for the two-column structure (content and sidebar),
+          and Flexbox for the navigation and feature cards. Media queries ensure
+          the layout adapts seamlessly across screen sizes.
+        </p>
+      </article>
+
+      <aside class="sidebar">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#support">Support</a></li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 My Responsive Site. All rights reserved.</p>
+  </footer>
+</body>
+</html>
